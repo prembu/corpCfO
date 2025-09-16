@@ -5,10 +5,34 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>CorpCFO</title>
+     <title>CorpcFO – Chartered Accountants & Corporate Finance Experts in New Delhi</title>
 
-     <!--=====FAB ICON=======-->
-    <link rel="shortcut icon" href="assets/img/logo/fav-logo1.png" type="image/x-icon">
+   
+    
+  <!-- Add this in the <head> of your HTML -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+/* ===== Apply Roboto font to entire website ===== */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; /* Regular for normal text */
+  line-height: 1.6;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700; /* Bold for headings */
+  color: #111;
+}
+
+p, li, a, span {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; /* Regular for paragraphs, lists, links */
+}
+</style>
+
 
     <!--===== CSS LINK =======-->
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
@@ -21,6 +45,7 @@
     <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
     <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/my.css">
 
     <!--=====  JS SCRIPT LINK =======-->
     <script src="assets/js/plugins/jquery-3-7-1.min.js"></script>
@@ -247,283 +272,75 @@
 <!--===== SIDEBAR ENDS STARTS=======-->
 
 
-<!-- Hero Section Start -->
-<section class="hero">
-  <video autoplay muted loop playsinline class="hero-video">
-    <source src="assets/videos/bg.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
 
-  <div class="overlay"></div>
 
-  <div class="hero-container">
-    
-    <!-- Left Content -->
-    <div class="hero-left">
-      <div class="rotating-text">
-        <span id="rotateText">Intellectual Property Services</span>
+<!--page header section start-->
+<section class="page-header position-relative overflow-hidden ptb-120">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-8 col-md-12">
+              <h1 class="display-5 fw-bold text-white">XBRL Conversion</h1>
+              <p class="lead text-light">
+                 We here at Corpcfogrp are experienced and adept in handling all the XBRL conversion services needs of business  reporting with utmost quality and attention to detail.
+              </p>
+          </div>
       </div>
-      <h1>Intellectual Property Services</h1>
-      <div class="subtitle">
-        Intellectual property or asset is intangible in nature and is a creation of human mind or intellect.
-      </div>
-      <p>
-        Intellectual property is of significant concern to people who are starting up their own ventures/businesses. Intellectual property results from intellectual creative processes and in today’s world may exceed the value of a physical property such as machines and buildings. 
-      </p>
-    </div>
-
-    <!-- Right Form -->
-    <div class="hero-right">
-      <div class="form-box">
-        <h3>Get in Touch</h3>
-        <form id="queryForm">
-          <div class="form-group">
-            <input class="form-control" type="text" id="fullName" placeholder="Full Name*" required />
-          </div>
-          <div class="form-group">
-            <input class="form-control" type="email" id="email" placeholder="Email Address*" required />
-          </div>
-          <div class="form-group">
-            <input class="form-control" type="tel" id="phone" maxlength="10" placeholder="Phone Number*" required />
-          </div>
-           <div class="form-group">
-            <input class="form-control" type="tel" id="phone" maxlength="10" placeholder="Massage" required />
-          </div>
-          
-          <button type="submit" class="btn">Submit</button>
-        </form>
-      </div>
-    </div>
+      <div class="bg-circle rounded-circle circle-shape-3 position-absolute"></div>
   </div>
 </section>
-<!-- Hero Section End -->
+<!--page header section end-->
 
-
-<!-- CSS -->
+<!-- ==== CSS STYLE ==== -->
 <style>
-  body {
-    margin: 0;
-    font-family: "Segoe UI", sans-serif;
-    height: 600px;
-  }
+/* Page Header Section */
+.page-header {
+  position: relative;
+  padding: 120px 0;
+  background: url('assets/img/hero/hero1.png') no-repeat center center/cover;
+  color: #fff;
+  overflow: hidden;
+}
 
-  /* Hero Section */
-  .hero {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 94vh;
-    overflow: hidden;
-    color: #fff;
-    padding-bottom: 20px;
-  }
+/* Overlay for readability */
+.page-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 0;
+}
 
-  .hero-video {
-    position: absolute;
-    top: 80px; left: 0;
-    width: 100%; height: 100%;
-    object-fit: cover;
-    z-index: -2;
-  }
+.page-header .container {
+  position: relative;
+  z-index: 2;
+}
 
-  .overlay {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0, 0, 50, 0.559);
-    z-index: -1;
-  }
+/* Text Styling */
+.page-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+}
 
-  .hero-container {
-    max-width: 1200px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 40px;
-    padding: 60px 20px;
-    z-index: 1;
-  }
+.page-header p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 650px;
+  line-height: 1.6;
+}
 
-  /* Left Content */
-  .hero-left {
-    flex: 1 1 55%;
-    color: #fff;
-  }
-
-  .rotating-text {
-    font-size: 16px;
-    margin-bottom: 15px;
-  }
-
-  .rotating-text span {
-    background: rgba(255, 255, 255, 0.15);
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-weight: 500;
-  }
-
-  .hero-left h1 {
-    font-size: 42px;
-    font-weight: bold;
-    margin: 10px 0;
-    line-height: 1.2;
-  }
-
-  .hero-left .subtitle {
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 20px;
-  }
-
-  .hero-left p {
-    font-size: 15px;
-    line-height: 1.7;
-    color: #eaeaea;
-  }
-
-  /* Right Form */
-  .hero-right {
-    flex: 1 1 40%;
-  }
-
-  .form-box {
-    background: #fff;
-    padding: 35px 30px;
-    border-radius: 14px;
-    box-shadow: 0 8px 35px rgba(0, 0, 0, 0.35);
-    color: #333;
-  }
-
-  .form-box h3 {
-    text-align: center;
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 25px;
-    color: #1f4ca1;
-  }
-
-  .form-group {
-    margin-bottom: 18px;
-  }
-
-  .form-control {
-    width: 100%;
-    padding: 12px 15px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 15px;
-    outline: none;
-    transition: 0.3s;
-  }
-
-  .form-control:focus {
-    border-color: #1f4ca1;
-    box-shadow: 0 0 6px rgba(31, 76, 161, 0.4);
-  }
-
-  .btn {
-    display: inline-block;
-    width: 100%;
-    padding: 12px 15px;
-    font-size: 15px;
-    font-weight: 600;
-    border: none;
-    border-radius: 8px;
-    background: #1f4ca1;
-    color: #fff;
-    cursor: pointer;
-    transition: 0.3s;
-    text-align: center;
-  }
-
-  .btn:hover {
-    background: #16367a;
-  }
-
-  /* Responsive */
-  @media (max-width: 1200px) {
-    .hero-container {
-      padding: 50px 15px;
-    }
-  }
-
-  @media (max-width: 991px) {
-    .hero-container {
-      flex-direction: column;
-      text-align: center;
-    }
-
-    .hero-left {
-      flex: 1 1 100%;
-      margin-bottom: 30px;
-    }
-
-    .hero-right {
-      flex: 1 1 100%;
-    }
-
-    .hero-left h1 {
-      font-size: 32px;
-    }
-
-    .hero-left .subtitle {
-      font-size: 16px;
-    }
-
-    .hero-left p {
-      font-size: 14px;
-    }
-
-    .form-box {
-      padding: 30px 20px;
-    }
-
-    .form-box h3 {
-      font-size: 20px;
-    }
-  }
-
-  @media (max-width: 576px) {
-    .hero-left h1 {
-      font-size: 26px;
-    }
-
-    .hero-left .subtitle {
-      font-size: 14px;
-    }
-
-    .hero-left p {
-      font-size: 13px;
-    }
-
-    .btn {
-      padding: 20px 16px;
-      font-size: 14px;
-    }
-  }
+/* Decorative Circle */
+.page-header .bg-circle {
+  width: 200px;
+  height: 200px;
+  background: #ffffff;
+  opacity: 0.15;
+  right: 5%;
+  bottom: -50px;
+  z-index: 1;
+}
 </style>
-
-
-<!-- JavaScript -->
-<script>
-  // Rotating Text
-  const texts = ["Intellectual Property Services", "Merger & Acquisition", "Accounting","Copyright Registration", "Due-Diligence", "Trademark Registration"];
-  let index = 0;
-  const rotateText = document.getElementById("rotateText");
-
-  setInterval(() => {
-    index = (index + 1) % texts.length;
-    rotateText.textContent = texts[index];
-  }, 2500);
-
-  // Form Submission (demo)
-  document.getElementById("queryForm").addEventListener("submit", function(e) {
-    e.preventDefault();
-    alert("Form submitted successfully!");
-  });
-</script>
 
 
 
@@ -533,134 +350,121 @@
 <div class="service-details-siderbars-area sp8">
   <div class="container">
     <div class="row">
-      <!-- Sidebar Start -->
-      <div class="col-lg-4">
-        <div class="service-side-widget">
-         
-          
+ <!-- Main Content Start (Left Side) -->
+<div class="col-lg-8 order-lg-1 order-2">
+  <div class="service-main-detailsarea leftpadding">
+    <div class="img1 image-anime reveal">
+      <img src="assets/img/all-images/service/service-img6.png" alt="">
+    </div>
+    <div class="space32"></div>
 
-          <div class="categories-area">
-  <h3>Our Services</h3>
-  <div class="space4"></div>
-  <ul>
-    <li><a href="#">Trademark & Logo Registration <span><i class="fa-solid fa-angle-right"></i></span></a></li>
-    <li><a href="#">Copyright Registration <span><i class="fa-solid fa-angle-right"></i></span></a></li>
-    <li><a href="#">Patent Registration <span><i class="fa-solid fa-angle-right"></i></span></a></li>
-    <li><a href="#">Trade Secret Protection <span><i class="fa-solid fa-angle-right"></i></span></a></li>
-    <li><a href="#">Company Law Advisory <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+    <h3>XBRL Conversion Services</h3>
+    <div class="space16"></div>
+    <p>
+      We here at Corpcfogrp are experienced and adept in handling all the XBRL conversion services needs of business reporting with utmost quality and attention to detail.
+    </p>
+    <p>
+      With the advancement of technology and ITES, competition in every sector of business has increased beyond comparisons. This mandates businesses to collect, analyze and interpret reports and financial statements more accurately to make strategic business decisions. Only such astute businesses can grow and flourish overcoming competition and other obstacles. 
+    </p>
+    <p>
+      Business reports and statements are created in various formats in every company. Some reports are in Microsoft Excel, while some others are made in Microsoft Word or PDF, however, for critical business reports or statements, XBRL is the best reporting format.
+    </p>
+    <p>
+      We are the right people to trust for high-quality XBRL outsourcing services. Our experts have immense expertise and there are separate teams to handle different categories of services.
+    </p>
 
-  </ul>
+    <div class="space32"></div>
+    <h3>Corpcfogrp XBRL Conversion Provisions</h3>
+
+    <div class="space32"></div>
+    <h3>FOR USA: SEC Filing</h3>
+    <ul class="list">
+      <li><strong>Onboard clients:</strong> We create filings, load earlier period documents, create sections and allocate them to users as defined by the clients.</li>
+      <li><strong>Structuring company taxonomy:</strong> We map the values to respective tags and organize taxonomy for building XBRL documents.</li>
+      <li><strong>Creation and validation of XBRL documents:</strong> We do the needed tagging and validation with respect to SEC specific rules. In case of any errors in the document related to filing rules, we fix them.</li>
+      <li><strong>Review:</strong> Based on comments from the XBRL experts, we review the documents.</li>
+      <li><strong>SEC submission:</strong> We make, compile and finally submit the interactive data files that are in line with the commission rules.</li>
+      <li><strong>Instant changes incorporation:</strong> We carry out needful changes instantly to ensure that everything proceeds smoothly.</li>
+    </ul>
+
+    <div class="space32"></div>
+    <h3>FOR UK: HMRC Filing</h3>
+    <ul class="list">
+      <li><strong>Convert document:</strong> We tag and transform the statutory accounts from all formats including MS Word and Excel.</li>
+      <li><strong>Review:</strong> We carry out the detailed review of all the iXBRL tagging to ensure that they adhere to all mandates of HMRC filing.</li>
+      <li><strong>Updated End-to-End solution:</strong> You don’t need to have any separate software. We stay updated on the changing requirements for HMRC compliance.</li>
+    </ul>
+
+    <div class="space32"></div>
+    <h3>FOR INDIA: MCA Filing</h3>
+    <p>
+      For our document creation procedures, we follow a universal delivery model and put a strong emphasis on information security and client confidentiality. We are in fact an expert XBRL conversion company and can meet exact client requirements, regardless of their strategies. Whether it is outsourcing, executing tasks in-house or else automating the process of XBRL reporting, we can assist with our supreme class of services.
+    </p>
+    <p>
+      We offer MCA specific XBRL services and solutions as well. We create XBRL documents compliant with MCA by making use of customized software and highly skilled staff for authoring and validation of XBRL information. Our tool is equipped with enough flexibility to accept input information from structured, unstructured or semi-structured files.
+    </p>
+
+    <div class="space32"></div>
+    <h3>Conclusion</h3>
+    <p>
+      Corpcfogrp ensures seamless and compliant XBRL conversion services for global clients including USA, UK, and India. By adhering to international filing standards, we guarantee accuracy, confidentiality, and timely delivery, making us the trusted partner for all your XBRL outsourcing needs.
+    </p>
+  </div>
 </div>
+<!-- Main Content End -->
 
-          <div class="space30"></div>
-          <div class="help-area">
-            <h3>If You Need Any Help <br class="d-lg-block d-none"> Contact With Us</h3>
-            <div class="space24"></div>
-            <div class="btn-area1">
-              <a href="tel:+1234567890">
-                <span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="18" fill="none" viewBox="0 0 14 18">
-                    <path d="M1.64362 5.57135C1.40487 3.99885 2.51362 2.58635 4.20737 2.06885C4.50794 1.97695 4.83224 2.00311 5.11419 2.142C5.39614 2.28089 5.61453 2.52205 5.72487 2.81635L6.26862 4.26635C6.35615 4.49962 6.37198 4.75372 6.31407 4.99605C6.25616 5.23837 6.12716 5.45786 5.94362 5.62635L4.32612 7.1076C4.24639 7.18077 4.18698 7.27335 4.15368 7.37631C4.12038 7.47927 4.11433 7.5891 4.13612 7.6951L4.15112 7.7601L4.18987 7.9226C4.39103 8.71216 4.69753 9.47105 5.10112 10.1789C5.54076 10.931 6.08635 11.6159 6.72112 12.2126L6.77112 12.2576C6.85187 12.3293 6.94981 12.3788 7.0554 12.4014C7.16099 12.4239 7.27062 12.4188 7.37362 12.3864L9.46487 11.7276C9.70253 11.653 9.95707 11.6511 10.1958 11.7221C10.4346 11.7932 10.6467 11.9339 10.8049 12.1264L11.7949 13.3276C12.2074 13.8276 12.1574 14.5626 11.6836 15.0039C10.3874 16.2126 8.60487 16.4601 7.36487 15.4639C5.8449 14.2378 4.56356 12.7425 3.58487 11.0526C2.59823 9.36403 1.94044 7.50439 1.64362 5.57135Z" fill="white"/>
-                  </svg>
-                </span>
-                +123 456 7890
-              </a>
+
+
+
+
+
+
+      <!-- Free Demo Form (Right Side) -->
+      <section class="col-lg-4 order-lg-2 order-1">
+        <div class="form-container sticky-form">
+          <h2>Request a Call Back from Our Team  &amp; Today's</h2>
+          <form action="#" method="post">
+            
+            <!-- Input fields -->
+            <div class="form-group">
+              <input type="text" placeholder="Full Name" required>
             </div>
-          </div>
-
-          <div class="space30"></div>
-          <div class="social-area">
-            <h3>Follow Us</h3>
-            <div class="space24"></div>
-            <ul>
-              <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-              <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
-              <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- Sidebar End -->
-
-      <!-- Main Content Start -->
-      <div class="col-lg-8">
-        <div class="service-main-detailsarea leftpadding">
-          <div class="img1 image-anime reveal">
-            <img src="assets/img/all-images/service/service-img6.png" alt="">
-          </div>
-          <div class="space32"></div>
-
-          <h3>Intellectual Property Services</h3>
-          <div class="space16"></div>
-          <p>Intellectual property is an intangible creation of the human mind, such as ideas, inventions, trade secrets, patents, copyrights, trademarks, and designs. Our team of experienced consultants and professionals offer end-to-end intellectual property services to safeguard your intangible assets like trademarks, copyrights, and patents.</p>
-          <div class="space16"></div>
-          <p>Registration of Trademark gives notice on a nationwide basis that the trademark belongs exclusively to the registrant. Trademarks must be sufficiently distinct to enable consumers to identify the manufacturer of the goods or the service provider so that it can distinguish between the competing goods. Trademark, Trade name, and Logo Registration are necessary to stop counterfeit goods or services. A copy of intellectual property has negative financial effects on legitimate businesses.
-
-Business Setup Worldwide professionally undertake the registration of ‘Company Logo’ and trademark or service mark by assisting our client with all the related legal formalities. Our team registers your trademark by submitting an application to the Ministry of Economy and Commerce (country specific, where the business is being setup), along with a specified fee, and finally getting the Trademark Registration Certificate issued to the applicant.
-
- </p>
-
-          <div class="space32"></div>
-          <h3>Why Businesses Need IP Services</h3>
-          <p>Intellectual property is often more valuable than physical assets like buildings or machinery. In the global economy, protecting IP from infringement is critical to secure your brand and business growth.</p>
-
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="service-details-box">
-                <div class="icons"><img src="assets/img/icons/service28.svg" alt=""></div>
-                <div class="text">
-                  <a href="service-single.html">Trademark & Logo Registration</a>
-                  <p>Secure your brand identity with nationwide trademark and logo registration.</p>
-                </div>
-              </div>
-              <div class="service-details-box">
-                <div class="icons"><img src="assets/img/icons/service30.svg" alt=""></div>
-                <div class="text">
-                  <a href="service-single.html">Patent Registration</a>
-                  <p>Protect your innovations and inventions with complete patent registration services.</p>
-                </div>
-              </div>
+            <div class="form-group">
+              <input type="email" placeholder="Email id" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" placeholder="Phone Number" required>
             </div>
 
-            <div class="col-lg-6">
-              <div class="service-details-box">
-                <div class="icons"><img src="assets/img/icons/service29.svg" alt=""></div>
-                <div class="text">
-                  <a href="service-single.html">Copyright Protection</a>
-                  <p>Register and safeguard creative works like art, music, and software.</p>
-                </div>
-              </div>
-              <div class="service-details-box">
-                <div class="icons"><img src="assets/img/icons/service31.svg" alt=""></div>
-                <div class="text">
-                  <a href="service-single.html">Trade Secret Protection</a>
-                  <p>Protect confidential business data, processes, and research from misuse.</p>
-                </div>
-              </div>
+            <!-- Checkbox list -->
+            <div class="form-options">
+              <p>I’m looking for experts <span class="required">*</span></p>
+              <label><input type="checkbox"> India Entry Services</label>
+              <label><input type="checkbox"> Intellectual Properties</label>
+              <label><input type="checkbox"> Finance & Taxation</label>
+              <label><input type="checkbox"> Corporate Restructuring</label>
+              <label><input type="checkbox">  Plan &amp; Business & Budgeting</label>
+              <label><input type="checkbox"> IPO/FPO (Public Issue)</label>
             </div>
-          </div>
 
-          <div class="space32"></div>
-          <h3>Benefits of IP Services</h3>
-          <p>Our services protect your creative assets, prevent infringement, and give you a competitive advantage. We ensure your business has the legal security needed to thrive in today’s market.</p>
+            <!-- Submit -->
+            <button type="submit" class="submit-btn">SUBMIT YOUR QUERY</button>
+          </form>
 
-          <div class="space32"></div>
-          <h3>Trademark & Logo Registration</h3>
-          <p>We professionally handle trademark and logo registration, ensuring compliance with all legal formalities and securing exclusive rights to your business identity.</p>
 
           
-
-          <div class="space32"></div>
-          <h3>Our Approach</h3>
-          <p>We assess your IP requirements, design tailored strategies, and provide complete support to secure and protect your intangible assets efficiently.</p>
         </div>
-      </div>
-      <!-- Main Content End -->
+        
+        
+      </section>
+      
+      
+      
     </div>
   </div>
 </div>
 
+ <!--===== SERVICE AREA START =======-->
 <div class="service-inner-section-area sp1">
     <div class="container"> 
         <div class="row">
@@ -678,11 +482,11 @@ Business Setup Worldwide professionally undertake the registration of ‘Company
             </div>
             <div class="space24"></div>
             <div class="content">
-              <a href="service-single.html">Debt Restructuring Services</a>
+              <a href="service-single.html">Accounting & Auditing</a>
               <div class="space16"></div>
-              <p>Debt Restructuring Services designed to help businesses manage their debt more effectively, providing relief.</p>
+              <p>We help you in maintaining Books of Accounts at a regular interval.Auditing is a mandatory requirement for businesses in India. We help you to get regular Audits at the comfort of business..</p>
               <div class="space24"></div>
-              <a href="service-single.html" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="service11.html" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -694,11 +498,11 @@ Business Setup Worldwide professionally undertake the registration of ‘Company
             </div>
             <div class="space24"></div>
             <div class="content">
-              <a href="service-single.html">Financial Strategy & Advisory</a>
+              <a href="service-single.html">Business Set-up Assistanc</a>
               <div class="space16"></div>
-              <p>Financial Strategy & Advisory service is designed help businesses  all sizes make informed, strategic decisions.</p>
+              <p>We have expertise in business set up Advisory for Foreign nationals. We assistIndian & offshore clients in India with respect to business registration & approvals with all departments </p>
               <div class="space24"></div>
-              <a href="service-single.html" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="service23.html" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -710,9 +514,9 @@ Business Setup Worldwide professionally undertake the registration of ‘Company
             </div>
             <div class="space24"></div>
             <div class="content">
-              <a href="service-single.html">Tax Planning & Compliance</a>
+              <a href="service2.html">Intellectual Property Rights (IPRS)</a>
               <div class="space16"></div>
-              <p>We stay updated the latest tax laws & policies helping you navigate complex tax landscapes our personalized.</p>
+              <p>We have expert team of Intellectual Property professionals & we can assist you in Trademark/copyright Registration, file opposition or attend hearing on your behalf..</p>
               <div class="space24"></div>
               <a href="service-single.html" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
             </div>
@@ -724,36 +528,44 @@ Business Setup Worldwide professionally undertake the registration of ‘Company
   <!--===== SERVICE AREA ENDS =======-->
 
 <!--===== CTA AREA STARTS =======-->
-<div class="cta1-section-area sp4">
+<div class="cta2-section-area text-white">
   <div class="container">
     <div class="row">
-      <div class="col-lg-5">
-        <div class="cta-header">
-          <h2 class="text-anime-style-3">Empowering Businesses, One Step at a Time</h2>
-          <div class="space32"></div>
-          <div class="btn-area1" data-aos="fade-left" data-aos-duration="1000">
-            <a href="contact.html" class="vl-btn1">Schedule a Consultation</a>
-            <a href="contact.html" class="vl-btn1 btn2">Start Your Journey</a>
+      <div class="col-lg-12">
+        <div class="cta-bg-area">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class=" text-white font-bold">
+                <h1>Your Partner in Strategic Business Excellence</h1>
+              </div>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5">
+              <div class="cta-form-area">
+                <form>
+                  <input type="text" placeholder="Enter Your Email">
+                  <button class="">Subscribe <i class="fa-solid fa-angle-right"></i></button>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="img1">
-    <img src="assets/img/all-images/cta/cta-img1.png" alt="">
-  </div>
 </div>
 <!--===== CTA AREA ENDS =======-->
 
 <!--===== FOOTER AREA STARTS =======-->
-<div class="vl-footer1-section-area sp8">
+<div class="vl-footer2-section-area">
   <div class="container">
     <div class="row">
+      <!-- Logo & About -->
       <div class="col-lg-3 col-md-6">
         <div class="footer-logo1">
-          <img src="assets/img/logo/logo1.png" alt="">
+          <img src="assets/img/logo/logo2.png" alt="">
           <div class="space24"></div>
-          <p>We are committed to providing  with the highest level of service expertise  business and finance if you have any.</p>
+          <p>We work as strategic partners to our clients and provide every service needed to take the hassle and worry out of Global organizations and thereby help them to transform to large multinational public listed companies.</p>
           <div class="space24"></div>
           <ul>
             <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -763,6 +575,8 @@ Business Setup Worldwide professionally undertake the registration of ‘Company
           </ul>
         </div>
       </div>
+
+      <!-- Quick Links -->
       <div class="col-lg-3 col-md-6">
         <div class="space30 d-md-none d-block"></div>
         <div class="vl-footer-widget first-padding">
@@ -770,100 +584,63 @@ Business Setup Worldwide professionally undertake the registration of ‘Company
           <div class="space4"></div>
           <ul>
             <li><a href="about.html">About Us</a></li>
+            <li><a href="team.html">Aur team</a></li>
             <li><a href="service.html">Our Services</a></li>
-            <li><a href="project.html">Case Studies</a></li>
-             <li><a href="pricing.html">Pricing Plan</a></li>
+            <li><a href="pricing.html">Insights</a></li>
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
-      </div> 
+      </div>
+
+      <!-- Our Services -->
+      <div class="col-lg-3 col-md-6">
+        <div class="space30 d-md-none d-block"></div>
+        <div class="vl-footer-widget">
+          <h3>Our Services</h3>
+          <div class="space4"></div>
+          <ul>
+            <li><a href="service.html">India Entry Services</a></li>
+            <li><a href="service.html">Secretarial</a></li>
+            <li><a href="service.html">Intellectual Properties</a></li>
+            <li><a href="service.html">Finance & Taxation</a></li>
+            <li><a href="service.html">Corporate Restructuring</a></li>
+            <li><a href="service.html">Other Services</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Contact -->
       <div class="col-lg-3 col-md-6">
         <div class="vl-footer-widget">
           <div class="space30 d-lg-none d-block"></div>
           <h3>Contact Us</h3>
           <ul>
-            <li><a href="tel:+11234567890"><img src="assets/img/icons/phn1.svg" alt="">+1 123 456 7890</a></li>
-            <li><a href="#"><img src="assets/img/icons/location1.svg" alt="">421 Allen, Mexico 4233</a></li>
-            <li><a href="renevagency%40com.html"><img src="assets/img/icons/email1.svg" alt="">finazzeconsult@com</a></li>
-            <li><a href="#"><img src="assets/img/icons/global1.svg" alt="">finazzeconsult.com</a></li>
+            <li><a href="tel:+917982659724"><img src="assets/img/icons/phn1.svg" alt="">+91 79826 59724</a></li>
+            <li><a href="#"><img src="assets/img/icons/location1.svg" alt="">209D, Jaina Tower-2 Janakpuri District Center, New Delhi-110058</a></li>
+            <li><a href="mailto:info@Corpcfogrp.com"><img src="assets/img/icons/email1.svg" alt="">info@Corpcfogrp.com</a></li>
+            <li><a href="#"><img src="assets/img/icons/global1.svg" alt="">corpcfogrp.com</a></li>
           </ul>
         </div>
       </div>
-
-      <div class="col-lg-3 col-md-6">
-        <div class="vl-footer-widget">
-          <div class="space30 d-lg-none d-block"></div>
-          <h3>Instagram Post</h3>
-          <div class="space8"></div>
-          <div class="row">
-            <div class="col-lg-4 col-4">
-              <div class="footer-img">
-                <img src="assets/img/all-images/footer/footer-img1.png" alt="">
-                <div class="icons">
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-4">
-              <div class="footer-img">
-                <img src="assets/img/all-images/footer/footer-img2.png" alt="">
-                <div class="icons">
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-4">
-              <div class="footer-img">
-                <img src="assets/img/all-images/footer/footer-img3.png" alt="">
-                <div class="icons">
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-4">
-              <div class="footer-img">
-                <img src="assets/img/all-images/footer/footer-img4.png" alt="">
-                <div class="icons">
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-4">
-              <div class="footer-img">
-                <img src="assets/img/all-images/footer/footer-img5.png" alt="">
-                <div class="icons">
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-4">
-              <div class="footer-img">
-                <img src="assets/img/all-images/footer/footer-img6.png" alt="">
-                <div class="icons">
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
+
     <div class="space60"></div>
     <div class="row">
       <div class="col-lg-12">
         <div class="vl-copyright-area">
-          <p>© Copyright 2025 - Finazze. All Right Reserved</p>
+          <p>© Copyright 2025 - CorpCFO. All Right Reserved</p>
+          <ul>
+            <li><a href="#"> Privacy Policy <span> | </span></a></li>
+            <li><a href="#"> Terms & Conditions </a></li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
 </div>
 <!--===== FOOTER AREA ENDS =======-->
+
+
 
 <!--===== JS SCRIPT LINK =======-->
 <script src="assets/js/plugins/bootstrap.min.js"></script>
@@ -886,6 +663,4 @@ Business Setup Worldwide professionally undertake the registration of ‘Company
 <script src="assets/js/main.js"></script>
 
 </body>
-
-<!-- Mirrored from unifato.com/finazze/service-left.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Sep 2025 07:52:28 GMT -->
 </html>

@@ -1,0 +1,235 @@
+
+/* Page Header Section */
+.page-header {
+  position: relative;
+  padding: 120px 0;
+  background: url('assets/img/hero/hero1.png') no-repeat center center/cover;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Overlay for readability */
+.page-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 0;
+}
+
+.page-header .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Text Styling */
+.page-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.page-header p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 650px;
+  line-height: 1.6;
+}
+
+/* Decorative Circle */
+.page-header .bg-circle {
+  width: 200px;
+  height: 200px;
+  background: #ffffff;
+  opacity: 0.15;
+  right: 5%;
+  bottom: -50px;
+  z-index: 1;
+}
+
+
+
+
+
+/* Gradient + Sticky Form */
+.demo-form-area {
+  margin-top: 20px;
+}
+.form-container {
+  background: linear-gradient(180deg, #004AAD 0%, #00C2A8 100%);
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+  text-align: center;
+  color: #fff;
+}
+.form-container h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+}
+/* Inputs */
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: white solid  1px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  outline: none;
+  background-color: white;
+}
+.form-group input:focus {
+  box-shadow: 0 0 8px rgba(255,255,255,0.5);
+}
+/* Checkboxes */
+.form-options {
+  text-align: left;
+  margin: 15px 0 20px;
+}
+.form-options p {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #fff;
+}
+.form-options label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  color: #fff;
+}
+.form-options input {
+  margin-right: 8px;
+}
+/* reCAPTCHA box placeholder */
+.captcha-box {
+  margin: 20px 0;
+}
+.recaptcha-placeholder {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 18px;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #333;
+  text-align: center;
+}
+/* Button */
+.submit-btn {
+  width: 100%;
+  background: #002b6b;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.submit-btn:hover {
+  background: #001f4d;
+}
+/* Sticky Form */
+.sticky-form {
+  position: sticky;
+  top: 20px; /* adjust space from top */
+  z-index: 99;
+}
+
+
+
+
+
+/* Gradient + Sticky Form */
+.demo-form-area {
+  margin-top: 20px;
+}
+.form-container {
+  background: linear-gradient(180deg, #004AAD 0%, #00C2A8 100%);
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+  text-align: center;
+  color: #fff;
+}
+.form-container h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+}
+/* Inputs */
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: white solid  1px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  outline: none;
+  background-color: white;
+}
+.form-group input:focus {
+  box-shadow: 0 0 8px rgba(255,255,255,0.5);
+}
+/* Checkboxes */
+.form-options {
+  text-align: left;
+  margin: 15px 0 20px;
+}
+.form-options p {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #fff;
+}
+.form-options label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  color: #fff;
+}
+.form-options input {
+  margin-right: 8px;
+}
+/* reCAPTCHA box placeholder */
+.captcha-box {
+  margin: 20px 0;
+}
+.recaptcha-placeholder {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 18px;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #333;
+  text-align: center;
+}
+/* Button */
+.submit-btn {
+  width: 100%;
+  background: #002b6b;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.submit-btn:hover {
+  background: #001f4d;
+}
+/* Sticky Form */
+.sticky-form {
+  position: sticky;
+  top: 94px; /* adjust space from top */
+  z-index: 99;
+}
